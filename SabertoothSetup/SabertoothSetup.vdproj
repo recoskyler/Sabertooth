@@ -123,7 +123,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:..\\..\\..\\..\\..\\Desktop\\SabertoothSetup.msi"
+        "OutputFilename" = "8:..\\SabertoothSetup.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -277,6 +277,11 @@
             "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
+                    "_4404FF5906234BA657E83775A6735AE6"
+                    {
+                    "Name" = "8:System.Net.Http.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
@@ -576,7 +581,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Sabertooth"
         "ProductCode" = "8:{C999DFC6-F8AF-44AC-A5C8-617FFDB7F207}"
-        "PackageCode" = "8:{69449015-2E0A-4EE0-8F23-AFD177A5894E}"
+        "PackageCode" = "8:{034FA848-CD9F-40F9-A2EA-6344B528790A}"
         "UpgradeCode" = "8:{44FCF9FF-6613-4DE8-AC80-28BC353A9DCE}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
