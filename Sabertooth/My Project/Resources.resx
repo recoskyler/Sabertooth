@@ -118,28 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="e_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\e_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="if_icon_arrow_down_b_211614" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_icon-arrow-down-b_211614.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_icon_close_round_211651" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_icon-close-round_211651.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_icon_ios7_gear_211751" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_icon-ios7-gear_211751.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="if_icon_minus_round_211863" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\if_icon-minus-round_211863.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="locking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="mid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\locking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="off_pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -163,13 +145,204 @@
   <data name="sabertooth_ICON1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sabertooth-ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_1476394613_Settings_5_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1476394613_Settings-5(1).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_equilizer_1646011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_1487207922_file_gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1487207922_file-gear.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_error_1646012.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="si" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\si.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_minus_1645995.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_plus_1646001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_themes_1646005.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bwclose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bwclose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bwfind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bwfind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bwfolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bwfolder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bwminus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bwminus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bwplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bwplus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bwwl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bwwl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EssentialFilters" xml:space="preserve">
+    <value>.exe
+Executable
+.pdf
+PDF
+.iso
+ISO
+.img
+ISO
+.jar
+JAVA
+.java
+JAVA
+.rar
+Compressed
+.zip
+Compressed
+.7z
+Compressed
+.gz
+Compressed
+.docx
+Document
+.doc
+Document
+.docm
+Document
+.gdoc
+Document
+.txt
+Document
+.dot
+Document
+.dotm
+Document
+.xls
+Spreadsheet
+.xlsw
+Spreadsheet
+.xlt
+Spreadsheet
+.xltx
+Spreadsheet
+.xltm
+Spreadsheet
+.xlsx
+Spreadsheet
+.xlsm
+Spreadsheet
+.gdoc
+Spreadsheet
+.jpg
+Picture
+.jpeg
+Picture
+.png
+Picture
+.tiff
+Picture
+.ico
+Picture
+.svg
+Picture
+.psd
+Picture
+.ai
+Picture
+.gif
+GIF - WEBM
+.webm
+GIF - WEBM
+.mp4
+Video
+.flv
+Video
+.avi
+Video
+.wmv
+Video
+.mov
+Video
+.mp3
+Audio
+.ac3
+Audio
+.wma
+Audio
+.aac
+Audio
+.ogg
+Audio
+.m4a
+Audio
+.flac
+Audio
+.wav
+Audio
+.aiff
+Audio
+.aea
+Audio
+.rm
+Audio
+.cr2
+RAW
+.cr3
+RAW
+.crw
+RAW
+.arw
+RAW
+.dng
+RAW
+.nef
+RAW
+.tif
+RAW
+.pptx
+Presentation
+.ppt
+Presentation
+.gslides
+Presentation
+.ppsx
+Presentation
+.pps
+Presentation
+.pptm
+Presentation
+Folders
+Folder</value>
+  </data>
+  <data name="EssentialFolders" xml:space="preserve">
+    <value>Audio
+Video
+Compressed
+Java
+Torrent
+Picture
+RAW
+PDF
+Document
+Executable
+Spreadsheet
+Presentation
+Folder
+ISO
+Other</value>
+  </data>
+  <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_2040_searchpad_change_c12_2400494.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="if_equilizer_1646011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_equilizer_1646011.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\if_system-restart-panel_79699.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainForm.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resetFol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resetFol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resetFolBW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resetFolBW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

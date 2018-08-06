@@ -1,0 +1,107 @@
+html {
+    font-family: Verdana;
+    color:#212121;
+    text-align: left;
+    font-size: 15px;
+    background-color: whitesmoke;
+}
+
+#title {
+    display: block;
+    position: relative;
+    font-family: Verdana;
+    color:black;
+    text-align: left;
+}
+
+head {
+    position: relative;
+    display: block;
+}
+
+body {
+    position: relative;
+    display: block;
+}
+
+h3 {
+    color:#4E4E4E;
+}
+
+.FormImage {
+    display: inline-block;
+    position: relative;
+    float: left;
+    margin: 20px;
+    margin-top:0px;
+    margin-left:0px;
+    border:1px solid deeppink;
+    clear:left;
+}
+
+.FormText {
+    float: left;
+    clear:left;
+    margin:0px;
+    padding: 0px;
+}
+
+.inlineHeadImg {
+    display:block;
+    position: relative;
+    height:18px;
+    width:auto;
+    float:left;
+    margin:0px;
+    margin-right:5px;
+    clear:left;
+}
+
+.inlineImg {
+    display: inline-block;
+    position: relative;
+    height:18px;
+    width:auto;
+    float:left;
+    margin:0px;
+    margin-left:5px;
+    margin-right:5px;
+    clear:left;
+}
+
+td {
+    vertical-align: top;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+tr {
+    margin:0px;
+    padding:0px;
+}
+
+p {
+    position:relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.HeadImg {
+    display:block;
+    position: relative;
+    float:left;
+    height:40px;
+    margin-right:15px;
+}
+
+.subject {
+    display:block;
+    position: relative;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+
+.warning {
+    color:red;
+}

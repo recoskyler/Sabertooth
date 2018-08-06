@@ -5,35 +5,176 @@
     <Setting Name="autostart" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="deleteOld" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">30</Value>
-    </Setting>
     <Setting Name="paths" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string /&gt;
-&lt;/ArrayOfString&gt;</Value>
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
     </Setting>
     <Setting Name="folders" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string /&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;[R]Video&lt;/string&gt;
+  &lt;string&gt;[R]Compressed&lt;/string&gt;
+  &lt;string&gt;[R]Java&lt;/string&gt;
+  &lt;string&gt;[R]Torrent&lt;/string&gt;
+  &lt;string&gt;[R]Picture&lt;/string&gt;
+  &lt;string&gt;[R]RAW&lt;/string&gt;
+  &lt;string&gt;[R]PDF&lt;/string&gt;
+  &lt;string&gt;[R]Document&lt;/string&gt;
+  &lt;string&gt;[R]Executable&lt;/string&gt;
+  &lt;string&gt;[R]Spreadsheet&lt;/string&gt;
+  &lt;string&gt;[R]Presentation&lt;/string&gt;
+  &lt;string&gt;[R]Folder&lt;/string&gt;
+  &lt;string&gt;[R]ISO&lt;/string&gt;
+  &lt;string&gt;[R]Other&lt;/string&gt;
+  &lt;string&gt;[R]GIF - WEBM&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="extensions" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string /&gt;
+  &lt;string&gt;.exe&lt;/string&gt;
+  &lt;string&gt;[R]Executable&lt;/string&gt;
+  &lt;string&gt;.pdf&lt;/string&gt;
+  &lt;string&gt;[R]PDF&lt;/string&gt;
+  &lt;string&gt;.iso&lt;/string&gt;
+  &lt;string&gt;[R]ISO&lt;/string&gt;
+  &lt;string&gt;.img&lt;/string&gt;
+  &lt;string&gt;[R]ISO&lt;/string&gt;
+  &lt;string&gt;.jar&lt;/string&gt;
+  &lt;string&gt;[R]JAVA&lt;/string&gt;
+  &lt;string&gt;.java&lt;/string&gt;
+  &lt;string&gt;[R]JAVA&lt;/string&gt;
+  &lt;string&gt;.rar&lt;/string&gt;
+  &lt;string&gt;[R]Compressed&lt;/string&gt;
+  &lt;string&gt;.zip&lt;/string&gt;
+  &lt;string&gt;[R]Compressed&lt;/string&gt;
+  &lt;string&gt;.7z&lt;/string&gt;
+  &lt;string&gt;[R]Compressed&lt;/string&gt;
+  &lt;string&gt;.gz&lt;/string&gt;
+  &lt;string&gt;[R]Compressed&lt;/string&gt;
+  &lt;string&gt;.docx&lt;/string&gt;
+  &lt;string&gt;[R]Document&lt;/string&gt;
+  &lt;string&gt;.doc&lt;/string&gt;
+  &lt;string&gt;[R]Document&lt;/string&gt;
+  &lt;string&gt;.docm&lt;/string&gt;
+  &lt;string&gt;[R]Document&lt;/string&gt;
+  &lt;string&gt;.gdoc&lt;/string&gt;
+  &lt;string&gt;[R]Document&lt;/string&gt;
+  &lt;string&gt;.txt&lt;/string&gt;
+  &lt;string&gt;[R]Document&lt;/string&gt;
+  &lt;string&gt;.dot&lt;/string&gt;
+  &lt;string&gt;[R]Document&lt;/string&gt;
+  &lt;string&gt;.dotm&lt;/string&gt;
+  &lt;string&gt;[R]Document&lt;/string&gt;
+  &lt;string&gt;.xls&lt;/string&gt;
+  &lt;string&gt;[R]Spreadsheet&lt;/string&gt;
+  &lt;string&gt;.xlsw&lt;/string&gt;
+  &lt;string&gt;[R]Spreadsheet&lt;/string&gt;
+  &lt;string&gt;.xlt&lt;/string&gt;
+  &lt;string&gt;[R]Spreadsheet&lt;/string&gt;
+  &lt;string&gt;.xltx&lt;/string&gt;
+  &lt;string&gt;[R]Spreadsheet&lt;/string&gt;
+  &lt;string&gt;.xltm&lt;/string&gt;
+  &lt;string&gt;[R]Spreadsheet&lt;/string&gt;
+  &lt;string&gt;.xlsx&lt;/string&gt;
+  &lt;string&gt;[R]Spreadsheet&lt;/string&gt;
+  &lt;string&gt;.xlsm&lt;/string&gt;
+  &lt;string&gt;[R]Spreadsheet&lt;/string&gt;
+  &lt;string&gt;.gdoc&lt;/string&gt;
+  &lt;string&gt;[R]Spreadsheet&lt;/string&gt;
+  &lt;string&gt;.jpg&lt;/string&gt;
+  &lt;string&gt;[R]Picture&lt;/string&gt;
+  &lt;string&gt;.jpeg&lt;/string&gt;
+  &lt;string&gt;[R]Picture&lt;/string&gt;
+  &lt;string&gt;.png&lt;/string&gt;
+  &lt;string&gt;[R]Picture&lt;/string&gt;
+  &lt;string&gt;.tiff&lt;/string&gt;
+  &lt;string&gt;[R]Picture&lt;/string&gt;
+  &lt;string&gt;.ico&lt;/string&gt;
+  &lt;string&gt;[R]Picture&lt;/string&gt;
+  &lt;string&gt;.svg&lt;/string&gt;
+  &lt;string&gt;[R]Picture&lt;/string&gt;
+  &lt;string&gt;.psd&lt;/string&gt;
+  &lt;string&gt;[R]Picture&lt;/string&gt;
+  &lt;string&gt;.ai&lt;/string&gt;
+  &lt;string&gt;[R]Picture&lt;/string&gt;
+  &lt;string&gt;.gif&lt;/string&gt;
+  &lt;string&gt;[R]GIF - WEBM&lt;/string&gt;
+  &lt;string&gt;.webm&lt;/string&gt;
+  &lt;string&gt;[R]GIF - WEBM&lt;/string&gt;
+  &lt;string&gt;.mp4&lt;/string&gt;
+  &lt;string&gt;[R]Video&lt;/string&gt;
+  &lt;string&gt;.flv&lt;/string&gt;
+  &lt;string&gt;[R]Video&lt;/string&gt;
+  &lt;string&gt;.avi&lt;/string&gt;
+  &lt;string&gt;[R]Video&lt;/string&gt;
+  &lt;string&gt;.wmv&lt;/string&gt;
+  &lt;string&gt;[R]Video&lt;/string&gt;
+  &lt;string&gt;.mov&lt;/string&gt;
+  &lt;string&gt;[R]Video&lt;/string&gt;
+  &lt;string&gt;.mkv&lt;/string&gt;
+  &lt;string&gt;[R]Video&lt;/string&gt;
+  &lt;string&gt;.m4v&lt;/string&gt;
+  &lt;string&gt;[R]Video&lt;/string&gt;
+  &lt;string&gt;.mp3&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.ac3&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.wma&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.aac&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.ogg&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.m4a&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.flac&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.wav&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.aiff&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.aea&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.rm&lt;/string&gt;
+  &lt;string&gt;[R]Audio&lt;/string&gt;
+  &lt;string&gt;.cr2&lt;/string&gt;
+  &lt;string&gt;[R]RAW&lt;/string&gt;
+  &lt;string&gt;.cr3&lt;/string&gt;
+  &lt;string&gt;[R]RAW&lt;/string&gt;
+  &lt;string&gt;.crw&lt;/string&gt;
+  &lt;string&gt;[R]RAW&lt;/string&gt;
+  &lt;string&gt;.arw&lt;/string&gt;
+  &lt;string&gt;[R]RAW&lt;/string&gt;
+  &lt;string&gt;.dng&lt;/string&gt;
+  &lt;string&gt;[R]RAW&lt;/string&gt;
+  &lt;string&gt;.nef&lt;/string&gt;
+  &lt;string&gt;[R]RAW&lt;/string&gt;
+  &lt;string&gt;.tif&lt;/string&gt;
+  &lt;string&gt;[R]RAW&lt;/string&gt;
+  &lt;string&gt;.pptx&lt;/string&gt;
+  &lt;string&gt;[R]Presentation&lt;/string&gt;
+  &lt;string&gt;.ppt&lt;/string&gt;
+  &lt;string&gt;[R]Presentation&lt;/string&gt;
+  &lt;string&gt;.gslides&lt;/string&gt;
+  &lt;string&gt;[R]Presentation&lt;/string&gt;
+  &lt;string&gt;.ppsx&lt;/string&gt;
+  &lt;string&gt;[R]Presentation&lt;/string&gt;
+  &lt;string&gt;.pps&lt;/string&gt;
+  &lt;string&gt;[R]Presentation&lt;/string&gt;
+  &lt;string&gt;.pptm&lt;/string&gt;
+  &lt;string&gt;[R]Presentation&lt;/string&gt;
+  &lt;string&gt;.torrent&lt;/string&gt;
+  &lt;string&gt;[R]Torrent&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="startMin" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="folderSettings" Type="System.Collections.Specialized.StringCollection" Scope="User">
+    <Setting Name="pathSettings" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string /&gt;
-&lt;/ArrayOfString&gt;</Value>
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
     </Setting>
     <Setting Name="autoOrg" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10</Value>
@@ -41,14 +182,39 @@
     <Setting Name="whiteList" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string /&gt;
+  &lt;string&gt;.crdownload&lt;/string&gt;
+  &lt;string&gt;.ini&lt;/string&gt;
+  &lt;string&gt;.inf&lt;/string&gt;
+  &lt;string&gt;.crx&lt;/string&gt;
+  &lt;string&gt;.opdownload&lt;/string&gt;
+  &lt;string&gt;.part&lt;/string&gt;
+  &lt;string&gt;.temp&lt;/string&gt;
+  &lt;string&gt;.tmp&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="autoUpdate" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="ver" Type="System.String" Scope="User">
-      <Value Profile="(Default)">0.0.1 Kitty</Value>
+      <Value Profile="(Default)">1.0.1</Value>
+    </Setting>
+    <Setting Name="autoOrgState" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="recursive" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="closeExit" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="cfulink" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://doc-0o-00-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/oi1j7pqa3j02ddgngsd9udmom6cgishv/1531173600000/16354782375476842736/*/0BxMYbMbrBH2_aXBibkJFNFhJVEk?e=download</Value>
+    </Setting>
+    <Setting Name="dlink" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="latestver" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.0.0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

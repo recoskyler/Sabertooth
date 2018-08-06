@@ -13,6 +13,7 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,8 +25,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -38,6 +38,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>Sabertooth.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -81,9 +82,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -105,11 +108,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Essentials.vb" />
+    <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -127,16 +131,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Settings.vb" />
     <Compile Include="SettingsForm.Designer.vb">
       <DependentUpon>SettingsForm.vb</DependentUpon>
     </Compile>
     <Compile Include="SettingsForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TrayForm.Designer.vb">
+      <DependentUpon>TrayForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -146,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SettingsForm.resx">
       <DependentUpon>SettingsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm.resx">
+      <DependentUpon>TrayForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -157,30 +171,15 @@
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
-      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <LastGenOutput>Settings1.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1476394613_Settings-5%281%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1487207922_file-gear.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sabertooth-ICON.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sabertoothU-ICON%281%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\e_folder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\file.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\folder.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sabertoothD-ICON.png" />
@@ -204,18 +203,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\if_icon-arrow-down-b_211614.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\if_icon-close-round_211651.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\if_icon-ios7-gear_211751.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\if_icon-minus-round_211863.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\locking.png" />
   </ItemGroup>
   <ItemGroup>
@@ -225,10 +212,73 @@
     <None Include="Resources\on-pic.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\if_icon-ios7-gear_211751.ico" />
+    <None Include="Resources\if_equilizer_1646011.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\si.ico" />
+    <None Include="Resources\bwclose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bwminus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bwplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bwwl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bwfolder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bwfind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_equilizer_1646011.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartingWithSabertooth.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartingWithSabertooth.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="folder.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="helpStyle.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="if_equilizer_1646011.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="if_error_1646012.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="if_plus_1646001.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainForm.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="off-pic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="on-pic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\folder.jpg" />
+    <Content Include="Resources\if_error_1646012.png" />
+    <Content Include="Resources\if_minus_1645995.png" />
+    <Content Include="Resources\if_plus_1646001.png" />
+    <Content Include="Resources\Image1.png" />
+    <Content Include="Resources\MainForm.png" />
+    <None Include="Resources\resetFolBW.png" />
+    <Content Include="sabertooth-ICON.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
