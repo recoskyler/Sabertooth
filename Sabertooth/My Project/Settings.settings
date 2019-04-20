@@ -196,7 +196,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="ver" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1.0.5</Value>
+      <Value Profile="(Default)">1.0.6</Value>
     </Setting>
     <Setting Name="autoOrgState" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

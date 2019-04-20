@@ -232,6 +232,7 @@ Module Essentials
         Dim remoteUri As String = My.Settings.cfulink
         Dim fileName As String = Path.Combine(Path.GetTempPath, "ver.txt")
         Debug.Print(fileName)
+        Debug.Print(remoteUri)
         Dim myStringWebResource As String = Nothing
         Dim downloadLink As String = My.Settings.dlink
 

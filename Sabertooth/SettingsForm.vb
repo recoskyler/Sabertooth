@@ -874,7 +874,13 @@ Public Class SettingsForm
 
         Dim urlpath As String = Application.StartupPath
 
-        My.Computer.Network.DownloadFile("https://github.com/recoskyler/Sabertooth/raw/master/SabertoothSetup.msi", Path.Combine(Path.GetTempPath, "SabertoothSetup.msi"))
+        Try
+            My.Computer.Network.DownloadFile("http://github.com/recoskyler/Sabertooth/raw/master/SabertoothSetup.msi", Path.Combine(Path.GetTempPath, "SabertoothSetup.msi"))
+        Catch ex As Exception
+            Debug.Print(ex.ToString)
+            Return
+        End Try
+
         Process.Start(Path.Combine(Path.GetTempPath, "update.bat"))
     End Sub
 
