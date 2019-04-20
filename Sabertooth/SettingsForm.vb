@@ -850,7 +850,9 @@ Public Class SettingsForm
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim urlpath As String = Application.StartupPath
         Process.Start("https://github.com/recoskyler/Sabertooth/raw/master/SabertoothSetup.msi")
+        Process.Start(Environment.SystemDirectory & "\MsiExec.exe /I{C999DFC6-F8AF-44AC-A5C8-617FFDB7F207}")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

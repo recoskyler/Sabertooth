@@ -271,9 +271,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("https://doc-0o-00-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksu"& _ 
-        "lhg5h7mbp1/oi1j7pqa3j02ddgngsd9udmom6cgishv/1531173600000/16354782375476842736/*"& _ 
-        "/0BxMYbMbrBH2_aXBibkJFNFhJVEk?e=download")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("https://raw.githubusercontent.com/recoskyler/Sabertooth/master/ver.txt")>  _
     Public Property cfulink() As String
         Get
             Return CType(Me("cfulink"),String)

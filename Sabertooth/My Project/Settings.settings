@@ -208,7 +208,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="cfulink" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://doc-0o-00-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/oi1j7pqa3j02ddgngsd9udmom6cgishv/1531173600000/16354782375476842736/*/0BxMYbMbrBH2_aXBibkJFNFhJVEk?e=download</Value>
+      <Value Profile="(Default)">https://raw.githubusercontent.com/recoskyler/Sabertooth/master/ver.txt</Value>
     </Setting>
     <Setting Name="dlink" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

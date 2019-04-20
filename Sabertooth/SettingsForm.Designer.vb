@@ -116,6 +116,7 @@ Partial Class SettingsForm
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1062,6 +1063,7 @@ Partial Class SettingsForm
         '
         'TabPage5
         '
+        Me.TabPage5.Controls.Add(Me.TextBox4)
         Me.TabPage5.Controls.Add(Me.TextBox1)
         Me.TabPage5.Controls.Add(Me.Button3)
         Me.TabPage5.Controls.Add(Me.LVL)
@@ -1233,6 +1235,20 @@ Partial Class SettingsForm
         Me.PictureBox12.TabStop = False
         Me.ToolTip1.SetToolTip(Me.PictureBox12, "Exclude Folder")
         '
+        'TextBox4
+        '
+        Me.TextBox4.BackColor = System.Drawing.Color.White
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox4.ForeColor = System.Drawing.Color.Red
+        Me.TextBox4.Location = New System.Drawing.Point(8, 146)
+        Me.TextBox4.Multiline = True
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
+        Me.TextBox4.Size = New System.Drawing.Size(660, 53)
+        Me.TextBox4.TabIndex = 8
+        Me.TextBox4.Text = "Make sure you know how to update Sabertooth. If you don't, check the offline help" &
+    " page, by going to the next tab [About & Help]."
+        '
         'SettingsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
@@ -1392,4 +1408,5 @@ Partial Class SettingsForm
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label19 As Label
     Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents TextBox4 As TextBox
 End Class
