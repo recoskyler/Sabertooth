@@ -205,6 +205,11 @@ Public Class SettingsForm
                 My.Settings.Reload()
 
                 refreshSettings()
+                If Not My.Settings.paths.Count > 0 Then
+                    MainForm.AllButton.Image = My.Resources.bwfolder
+                Else
+                    MainForm.AllButton.Image = My.Resources.folder
+                End If
             End If
         End If
     End Sub
@@ -388,6 +393,12 @@ Public Class SettingsForm
         My.Settings.Reload()
 
         refreshSettings()
+
+        If Not My.Settings.paths.Count > 0 Then
+            MainForm.AllButton.Image = My.Resources.bwfolder
+        Else
+            MainForm.AllButton.Image = My.Resources.folder
+        End If
     End Sub
 
     Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged

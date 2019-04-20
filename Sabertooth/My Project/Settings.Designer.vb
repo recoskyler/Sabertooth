@@ -223,7 +223,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("1.0.6")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("1.0.7")>  _
     Public Property ver() As String
         Get
             Return CType(Me("ver"),String)
