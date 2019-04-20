@@ -849,11 +849,33 @@ Public Class SettingsForm
         Process.Start(urlpath & "\help.html")
     End Sub
 
+    Private Sub createUpdater()
+        Dim up As String = Path.Combine(Path.GetTempPath, "update.bat")
+
+        If File.Exists(up) Then
+            Try
+                File.Delete(up)
+            Catch ex As Exception
+                Debug.Print(ex.ToString)
+            End Try
+        End If
+
+        Dim sb As New System.Text.StringBuilder
+
+        sb.AppendLine("@echo off")
+        sb.AppendLine("msiexec /uninstall {C999DFC6-F8AF-44AC-A5C8-617FFDB7F207}")
+        sb.AppendLine(Path.Combine(Path.GetTempPath, "SabertoothSetup.msi"))
+
+        IO.File.WriteAllText(up, sb.ToString())
+    End Sub
+
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        createUpdater()
+
         Dim urlpath As String = Application.StartupPath
 
-        Process.Start("https://github.com/recoskyler/Sabertooth/raw/master/SabertoothSetup.msi")
-        Process.Start(Environment.SystemDirectory & "\msiexec.exe /uninstall {C999DFC6-F8AF-44AC-A5C8-617FFDB7F207}")
+        My.Computer.Network.DownloadFile("https://github.com/recoskyler/Sabertooth/raw/master/SabertoothSetup.msi", Path.Combine(Path.GetTempPath, "SabertoothSetup.msi"))
+        Process.Start(Path.Combine(Path.GetTempPath, "update.bat"))
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
