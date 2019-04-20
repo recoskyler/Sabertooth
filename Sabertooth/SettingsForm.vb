@@ -850,7 +850,7 @@ Public Class SettingsForm
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Process.Start("https://drive.google.com/uc?export=download&id=1T5xD_3VWSJSETyWOtcCnzanM_2S4j8pD")
+        Process.Start("https://github.com/recoskyler/Sabertooth/raw/master/SabertoothSetup.msi")
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
