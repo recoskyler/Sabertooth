@@ -336,22 +336,38 @@ Public Class SettingsForm
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
-        Dim index As Integer = ListView2.SelectedItems(0).Index
+        If Not ListView2.SelectedItems.Count > 0 Then
+            Return
+        End If
 
-        If RadioButton2.Checked Then
-            ListView2.SelectedItems(0).SubItems(1).Text = "✔"
-            ListView2.SelectedItems(0).SubItems(2).Text = "✕"
-            updatePathSetting(index)
+        Dim index As Integer
+
+        If ListView2.SelectedItems.Count = 1 Then
+            index = ListView2.SelectedItems(0).Index
+
+            If RadioButton2.Checked Then
+                ListView2.SelectedItems(0).SubItems(1).Text = "✔"
+                ListView2.SelectedItems(0).SubItems(2).Text = "✕"
+                updatePathSetting(index)
+            End If
         End If
     End Sub
 
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
-        Dim index As Integer = ListView2.SelectedItems(0).Index
+        If Not ListView2.SelectedItems.Count > 0 Then
+            Return
+        End If
 
-        If RadioButton3.Checked Then
-            ListView2.SelectedItems(0).SubItems(1).Text = "✕"
-            ListView2.SelectedItems(0).SubItems(2).Text = "✔"
-            updatePathSetting(index)
+        Dim index As Integer
+
+        If ListView2.SelectedItems.Count = 1 Then
+            index = ListView2.SelectedItems(0).Index
+
+            If RadioButton3.Checked Then
+                ListView2.SelectedItems(0).SubItems(1).Text = "✕"
+                ListView2.SelectedItems(0).SubItems(2).Text = "✔"
+                updatePathSetting(index)
+            End If
         End If
     End Sub
 
@@ -385,7 +401,8 @@ Public Class SettingsForm
         MainForm.Timer1.Interval = My.Settings.autoOrg * 60000
         MainForm.Timer1.Start()
 
-        'Debug.Print(My.Settings.autoOrg)
+        Debug.Print(My.Settings.autoOrg)
+        Debug.Print(My.Settings.autoOrg * 60000)
     End Sub
 
     Private Sub CheckBox5_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox5.CheckedChanged

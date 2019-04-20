@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
     <Setting Name="autostart" Type="System.Boolean" Scope="User">
@@ -42,9 +42,9 @@
   &lt;string&gt;.img&lt;/string&gt;
   &lt;string&gt;[R]ISO&lt;/string&gt;
   &lt;string&gt;.jar&lt;/string&gt;
-  &lt;string&gt;[R]JAVA&lt;/string&gt;
+  &lt;string&gt;[R]Java&lt;/string&gt;
   &lt;string&gt;.java&lt;/string&gt;
-  &lt;string&gt;[R]JAVA&lt;/string&gt;
+  &lt;string&gt;[R]Java&lt;/string&gt;
   &lt;string&gt;.rar&lt;/string&gt;
   &lt;string&gt;[R]Compressed&lt;/string&gt;
   &lt;string&gt;.zip&lt;/string&gt;

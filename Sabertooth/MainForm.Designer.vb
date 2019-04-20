@@ -29,14 +29,15 @@ Partial Class MainForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.AllButton = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.AllButton = New System.Windows.Forms.PictureBox()
         Me.AutoOrgButton = New System.Windows.Forms.PictureBox()
         Me.AutoOrgLabel = New System.Windows.Forms.Label()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.TitleBar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AllButton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,7 +60,6 @@ Partial Class MainForm
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.BackgroundImage = Global.Sabertooth.My.Resources.Resources.close
         Me.CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CloseButton.FlatAppearance.BorderSize = 0
         Me.CloseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.CloseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -95,25 +95,11 @@ Partial Class MainForm
         Me.Label1.Text = "Sabertooth"
         Me.ToolTip1.SetToolTip(Me.Label1, "Her name is actually BIDIK")
         '
-        'AllButton
-        '
-        Me.AllButton.BackColor = System.Drawing.Color.Transparent
-        Me.AllButton.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.AllButton.Image = Global.Sabertooth.My.Resources.Resources.folder
-        Me.AllButton.Location = New System.Drawing.Point(106, 75)
-        Me.AllButton.Name = "AllButton"
-        Me.AllButton.Size = New System.Drawing.Size(200, 200)
-        Me.AllButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.AllButton.TabIndex = 1
-        Me.AllButton.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.AllButton, "Organize All Folders")
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.BackgroundImage = Global.Sabertooth.My.Resources.Resources.settings
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
@@ -130,7 +116,6 @@ Partial Class MainForm
         Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.BackgroundImage = Global.Sabertooth.My.Resources.Resources.plus
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -141,9 +126,19 @@ Partial Class MainForm
         Me.ToolTip1.SetToolTip(Me.Button2, "Add Folder to Organize")
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'AllButton
+        '
+        Me.AllButton.BackColor = System.Drawing.Color.Transparent
+        Me.AllButton.Image = Global.Sabertooth.My.Resources.Resources.folder
+        Me.AllButton.Location = New System.Drawing.Point(106, 75)
+        Me.AllButton.Name = "AllButton"
+        Me.AllButton.Size = New System.Drawing.Size(200, 200)
+        Me.AllButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.AllButton.TabIndex = 1
+        Me.AllButton.TabStop = False
+        '
         'AutoOrgButton
         '
-        Me.AutoOrgButton.Cursor = System.Windows.Forms.Cursors.Hand
         Me.AutoOrgButton.Image = Global.Sabertooth.My.Resources.Resources.on_pic
         Me.AutoOrgButton.Location = New System.Drawing.Point(254, 329)
         Me.AutoOrgButton.Name = "AutoOrgButton"
@@ -155,7 +150,6 @@ Partial Class MainForm
         'AutoOrgLabel
         '
         Me.AutoOrgLabel.AutoSize = True
-        Me.AutoOrgLabel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.AutoOrgLabel.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AutoOrgLabel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.AutoOrgLabel.Location = New System.Drawing.Point(9, 342)
@@ -176,12 +170,22 @@ Partial Class MainForm
         '
         'Timer1
         '
+        Me.Timer1.Interval = 30000
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(0, 300)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(318, 10)
+        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar1.TabIndex = 8
         '
         'MainForm
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(318, 393)
+        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
@@ -218,4 +222,5 @@ Partial Class MainForm
     Friend WithEvents Button2 As Button
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents ProgressBar1 As ProgressBar
 End Class

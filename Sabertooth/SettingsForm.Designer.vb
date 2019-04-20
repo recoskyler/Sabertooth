@@ -36,6 +36,8 @@ Partial Class SettingsForm
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.AutoOrgButton = New System.Windows.Forms.PictureBox()
@@ -114,14 +116,13 @@ Partial Class SettingsForm
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AutoOrgButton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
@@ -151,7 +152,6 @@ Partial Class SettingsForm
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -194,6 +194,7 @@ Partial Class SettingsForm
         'CheckBox6
         '
         Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckBox6.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox6.Location = New System.Drawing.Point(6, 116)
         Me.CheckBox6.Name = "CheckBox6"
@@ -206,6 +207,7 @@ Partial Class SettingsForm
         'CheckBox5
         '
         Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckBox5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox5.Location = New System.Drawing.Point(6, 90)
         Me.CheckBox5.Name = "CheckBox5"
@@ -234,6 +236,7 @@ Partial Class SettingsForm
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckBox4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox4.Location = New System.Drawing.Point(6, 142)
         Me.CheckBox4.Name = "CheckBox4"
@@ -246,6 +249,7 @@ Partial Class SettingsForm
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckBox3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox3.Location = New System.Drawing.Point(6, 62)
         Me.CheckBox3.Name = "CheckBox3"
@@ -258,6 +262,7 @@ Partial Class SettingsForm
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckBox2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox2.Location = New System.Drawing.Point(6, 34)
         Me.CheckBox2.Name = "CheckBox2"
@@ -270,6 +275,7 @@ Partial Class SettingsForm
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.CheckBox1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox1.Location = New System.Drawing.Point(6, 6)
         Me.CheckBox1.Name = "CheckBox1"
@@ -325,6 +331,32 @@ Partial Class SettingsForm
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Folder Settings"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label19.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label19.Location = New System.Drawing.Point(42, 254)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(125, 16)
+        Me.Label19.TabIndex = 22
+        Me.Label19.Text = "Unorganize Folder"
+        Me.ToolTip1.SetToolTip(Me.Label19, "Move all the organized files and folders out of the sub folders.")
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox14.Image = Global.Sabertooth.My.Resources.Resources.resetFol
+        Me.PictureBox14.Location = New System.Drawing.Point(6, 248)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox14.TabIndex = 21
+        Me.PictureBox14.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox14, "Exclude Folder")
         '
         'Label1
         '
@@ -1057,6 +1089,7 @@ Partial Class SettingsForm
         '
         'Button3
         '
+        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.Location = New System.Drawing.Point(214, 91)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(454, 23)
@@ -1084,6 +1117,7 @@ Partial Class SettingsForm
         '
         'Button2
         '
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.Location = New System.Drawing.Point(214, 56)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(454, 23)
@@ -1123,6 +1157,7 @@ Partial Class SettingsForm
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue
         Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -1152,8 +1187,8 @@ Partial Class SettingsForm
         Me.Label8.AutoSize = True
         Me.Label8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label8.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(44, 9)
+        Me.Label8.ForeColor = System.Drawing.Color.Red
+        Me.Label8.Location = New System.Drawing.Point(44, 11)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(125, 16)
         Me.Label8.TabIndex = 18
@@ -1177,8 +1212,8 @@ Partial Class SettingsForm
         Me.Label4.AutoSize = True
         Me.Label4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label4.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(568, 9)
+        Me.Label4.ForeColor = System.Drawing.Color.SteelBlue
+        Me.Label4.Location = New System.Drawing.Point(568, 11)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(100, 16)
         Me.Label4.TabIndex = 20
@@ -1197,32 +1232,6 @@ Partial Class SettingsForm
         Me.PictureBox12.TabIndex = 19
         Me.PictureBox12.TabStop = False
         Me.ToolTip1.SetToolTip(Me.PictureBox12, "Exclude Folder")
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label19.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(42, 254)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(125, 16)
-        Me.Label19.TabIndex = 22
-        Me.Label19.Text = "Unorganize Folder"
-        Me.ToolTip1.SetToolTip(Me.Label19, "Move all the organized files and folders out of the sub folders.")
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox14.Image = Global.Sabertooth.My.Resources.Resources.resetFol
-        Me.PictureBox14.Location = New System.Drawing.Point(6, 248)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox14.TabIndex = 21
-        Me.PictureBox14.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.PictureBox14, "Exclude Folder")
         '
         'SettingsForm
         '
@@ -1247,6 +1256,7 @@ Partial Class SettingsForm
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AutoOrgButton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage3.ResumeLayout(False)
@@ -1286,7 +1296,6 @@ Partial Class SettingsForm
         Me.Panel4.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

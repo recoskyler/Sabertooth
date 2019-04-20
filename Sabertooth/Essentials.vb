@@ -135,7 +135,17 @@ Module Essentials
                 Debug.Print(ex.ToString)
             End Try
         End If
+
+        MainForm.ProgressBar1.Value = MainForm.ProgressBar1.Maximum
+        RSleep(500)
+        MainForm.ProgressBar1.Value = 0
     End Sub
+
+    Function EncodeString(ByRef SourceData As String, ByRef CharSet As String) As Byte()
+        Dim bSourceData As Byte() = System.Text.Encoding.Unicode.GetBytes(SourceData)
+        Dim OutEncoding As System.Text.Encoding = System.Text.Encoding.GetEncoding(CharSet)
+        Return System.Text.Encoding.Convert(System.Text.Encoding.Unicode, OutEncoding, bSourceData)
+    End Function
 
     Private Sub sortFile(fl As String, target As String)
         Dim ext As String = Path.GetExtension(fl).ToLower().Replace("ı", "i")
@@ -159,11 +169,35 @@ Module Essentials
             Debug.Print("======================================================================")
             Debug.Print("File:" & fl)
             Debug.Print("New Path:" & newpath)
-            File.Move(fl, checkFileName(newpath, fl))
+            Debug.Print("[" & newpath & "][" & fl & "]" & newpath.ToString.Equals(fl.ToString) & " " & newpath.ToString.GetTypeCode.ToString & " " & fl.ToString.GetTypeCode.ToString)
+
+            If Not checkEqual(newpath, fl) Then
+                File.Move(fl, checkFileName(newpath, fl))
+            End If
         Catch ex As Exception
             Debug.Print(ex.ToString)
         End Try
+
+        MainForm.ProgressBar1.Value = MainForm.ProgressBar1.Value + 1
     End Sub
+
+    Private Function checkEqual(ByVal a As String, ByVal b As String)
+        Dim aa As Char() = a.ToCharArray
+        Dim ba As Char() = b.ToCharArray
+
+        If Not aa.Count = ba.Count Then
+            Return False
+        End If
+
+        For i As Integer = 0 To aa.Count - 1
+            If Not aa(i) = ba(i) Then
+                Debug.Print(aa(i) & " " & ba(i) & " " & Convert.ToByte(aa(i)).ToString & " " & Convert.ToByte(ba(i)).ToString)
+                Return False
+            End If
+        Next
+
+        Return True
+    End Function
 
     Private Sub sortFolder(fl As String, target As String)
         Dim foldername As String = fl.Substring(fl.LastIndexOf("\") + 1)
@@ -175,6 +209,10 @@ Module Essentials
 
         newpath = newpath & foldername
 
+        If fl.ToString = checkFolderName(newpath, fl).ToString Then
+            Return
+        End If
+
         ' Try to move the folder
 
         Try
@@ -185,6 +223,8 @@ Module Essentials
         Catch ex As Exception
             Debug.Print(ex.ToString)
         End Try
+
+        MainForm.ProgressBar1.Value = MainForm.ProgressBar1.Value + 1
     End Sub
 
     Public Function checkForUpdates() As String
