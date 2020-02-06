@@ -10,7 +10,7 @@ A simple file and folder organizer for Windows.
 ## Installation
 
 1. Download [SabertoothSetup.msi](https://github.com/recoskyler/Sabertooth/blob/master/SabertoothSetup.msi).
-2. (Optional) Check the SHA-256 checksum of the downloaded file: 69803968839790B3B78DD805E767D476042A03E8A2D8E7C2204FE32B1111BCDE
+2. (Optional) Check the SHA-256 checksum of the downloaded file: **69803968839790B3B78DD805E767D476042A03E8A2D8E7C2204FE32B1111BCDE**
 3. Run the installer as admin.
 4. Follow the installer steps. I mean, you won't have to do anything, just click "Next" everywhere.
 
