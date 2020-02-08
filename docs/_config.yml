@@ -1,0 +1,7 @@
+theme: jekyll-theme-cayman
+title: Sabertooth
+description: Sabertooth is a simple folder organizer, that can organize files/folders in multiple directories automatically.
+show_downloads: true
+github:
+  download_url: https://github.com/recoskyler/Sabertooth/blob/master/SabertoothSetup.msi
+  repository_url: https://github.com/recoskyler/Sabertooth
